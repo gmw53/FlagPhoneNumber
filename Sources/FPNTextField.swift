@@ -336,7 +336,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
 		flagButton.setImage(selectedCountry?.flag, for: .normal)
 
 		if let phoneCode = selectedCountry?.phoneCode {
-			phoneCodeTextField.text = phoneCode
+			phoneCodeTextField.text = "(\(phoneCode))"
 		}
 
 		if hasPhoneNumberExample == true {
